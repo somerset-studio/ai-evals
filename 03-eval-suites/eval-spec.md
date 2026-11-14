@@ -8,7 +8,7 @@
 | Business stakes | Making false claims about competitors puts the company at risk of legal action. |
 | Owner | Ascend IQ Product Manager. They review every answer the judge blocks each week, decide whether each block is a true failure or a false alarm (for example rows 3 and 8), and re-check the threshold on a larger test set. Engineering runs the judge in the pipeline, and legal is told about any confirmed false competitor claim. |
 
-Messages
+# Messages
 **Engineering · acceptance criteria:** For every question that names a competitor, send the question, the answer and the reference to the Lab 1 judge before the answer is shown, and show the answer only if the judge returns 1. If the judge returns 0, returns anything else, or errors, block the answer and show the fallback message, so no answer with a score of 0 ever reaches a user.
 
 **Design · what the user sees:** When the judge blocks an answer, the user sees only this message in its place: "I can't verify this against a source yet, so I haven't answered. I've flagged it for our team to review." The blocked draft, the judge's score and its reasoning are never shown.
