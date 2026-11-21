@@ -24,7 +24,7 @@
 - **Why it’s enough:** Bias shows up as a pattern across many outputs, so a stratified matched-pair sample detects it without scoring every response live. At P2, a weekly review is proportionate, and it can move to a higher frequency if a skew appears.
 
 ### Code-based check · Slow Answers (Latency · P3)
-- **Cheaper check:** An automated release test runs a fixed set of long multi-step questions and fails the release if any exceed 10 seconds. A production alert on p95 latency, built on existing telemetry, covers live traffic between releases.
+- **Cheaper check:** An automated release test runs a fixed set of long multi-step questions and fails the release if any exceed 2.0 seconds. A production alert on p95 latency, built on existing telemetry, covers live traffic between releases.
 - **Why it’s enough:** Latency is directly measurable by rule, so it needs no judgement or LLM scoring. The release gate catches regressions, and the p95 alert catches load spikes and slow paths in production. At P3, this is proportionate.
 
 ## Reasons for changes
