@@ -13,7 +13,7 @@
 
 ## Accepted Gap
 
-**Fairness.** Whilst it isn't ideal that the results lack fairness, I would rather the scores vary under scrutiny or be biased to a particularly load market than the system to hallucinate and make up competitor signal. The scores also are seen by the sales team anyway who can evaluate them as they come in and challenge any bias.
+**Fairness.** Whilst it isn't ideal that the results lack fairness, I would rather the scores vary under scrutiny or be biased to a particularly loud market than the system to hallucinate and make up competitor signal. The scores also are seen by the sales team anyway who can evaluate them as they come in and challenge any bias.
 
 We’ll look again: If the system began to ignore a huge market sector to the detriment of our sales team we would need to expand the targeting.
 
