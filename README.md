@@ -4,7 +4,9 @@ An end-to-end evaluation system for **Ascend IQ**, a customer-facing AI agent th
 
 > **Decision: HOLD.** In our audit, Ascend IQ made false claims about named competitors in 2 of 20 answers, and our Hard release gate allows zero. None of the checks that would stop those claims runs on every release yet.
 
-**[▶ View the final presentation](06-culture/final-presentation.html)**
+**[▶ View the exec summary](06-culture/final-presentation-exec-summary.html)**
+
+**[▶ View the detailed summary](06-culture/final-presentation-original-output.html)**
 
 ## Why it matters
 
