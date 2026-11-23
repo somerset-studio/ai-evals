@@ -8,6 +8,8 @@
 | Soft | Row 1 · Hallucination: the answer quotes the old price as current | % of golden-set answers quoting a price that present a superseded price as current, checked against the live pricing page. | 0%. | Ascend IQ golden set | Code-based check | Staging |
 | Advisory | Row 3 · Latency: exceeded the maximum response time | % of golden-set answers returned within the 2.0s target. | 100%. Anything below that raises a warning but never blocks. | Ascend IQ golden set | Code-based check | Pull Request |
 
+**Hard gate · what counts as a pass:** The gate runs the golden set through the full pipeline, including the competitor-claim judge that blocks answers before users see them (see `03-eval-suites/eval-spec.md`). Each answer is scored on what the user would see, against the golden set's verified answers, not by the same judge that blocks answers, so the gate catches anything the judge misses. An answer passes if it is shown and matches the tech specs, or if it is blocked and replaced by the fallback message. A single shown answer with a confirmed false competitor claim fails the release. Blocked answers that were actually correct are false alarms: they don't fail the release, but they are logged and used to fix the judge.
+
 ## CI Gate Request for Engineering
 
 - **Hard gate · False claims relating to competitors (#HALLUCINATION).** Check: the LLM judge, run on the Ascend IQ golden set at Release. Measures: % of competitor-comparison answers in the golden set whose claims about Ascend and any named competitor match the tech specs. That means no contradictions, no reversed comparisons, and no criticism of a competitor that the specs don’t back up.. Passes when: 100%. A single failure blocks the release.. On a fail: block the release.
