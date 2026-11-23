@@ -2,30 +2,26 @@
 
 > My final project for Product School's **AI Evals** certification. One evaluation system for a real LLM feature, from strategy, through failure discovery and an automated eval suite, to the gates and governance that let it ship safely.
 
-This is a **template repo**. Click **Use this template → Create a new repository**, name it `ai-evals` (or `<your-feature>-evals`), and fill in one folder per module as you go. The repo URL is your submission.
-
-> **Tools & cost.** No eval platform, no signup, no credit card, and no code. Every lab runs in any chat, such as ChatGPT, Claude or Gemini, and the Lab Guide for each module gives you the prompts. Prefer a dashboard? LangSmith, Braintrust or Phoenix are optional.
-
 ---
 
 ## Deliverables at a glance
 
 | Module | Artifact | Status | File |
 |---|---|---|---|
-| M1 | **Evaluation Strategy Canvas** | ☐ | `01-evaluation-strategy/strategy-canvas.md` |
-| M2 | **Failure audit log** | ☐ | `02-failure-discovery/audit-log.md` |
-| M2 | **Failure Taxonomy** | ☐ | `02-failure-discovery/failure-taxonomy.md` |
-| M3 | **Eval suite** (three checks and their results) | ☐ | `03-eval-suites/eval-suite.md` |
-| M3 | **Eval spec** (five parts and three team messages) | ☐ | `03-eval-suites/eval-spec.md` |
-| M4 | **Eval gate map** (gate level × placement) | ☐ | `04-eval-gates/gate-map.md` |
-| M4 | **Launch strategy** (release criteria + mitigation) | ☐ | `04-eval-gates/launch-strategy.md` |
-| M5 | **Coverage matrix** | ☐ | `05-scale/coverage-matrix.md` |
-| M5 | **Eval budget** | ☐ | `05-scale/eval-budget.md` |
-| M6 | **Ship-or-hold memo** | ☐ | `06-culture/ship-hold-memo.md` |
+| M1 | **Evaluation Strategy Canvas** | ✅ | `01-evaluation-strategy/strategy-canvas.md` |
+| M2 | **Failure audit log** | ✅ | `02-failure-discovery/audit-log.md` |
+| M2 | **Failure Taxonomy** | ✅ | `02-failure-discovery/failure-taxonomy.md` |
+| M3 | **Eval suite** (three checks and their results) | ✅ | `03-eval-suites/eval-suite.md` |
+| M3 | **Eval spec** (five parts and three team messages) | ✅ | `03-eval-suites/eval-spec.md` |
+| M4 | **Eval gate map** (gate level × placement) | ✅ | `04-eval-gates/gate-map.md` |
+| M4 | **Launch strategy** (release criteria + mitigation) | ✅ | `04-eval-gates/launch-strategy.md` |
+| M5 | **Coverage matrix** | ✅ | `05-scale/coverage-matrix.md` |
+| M5 | **Eval budget** | ✅ | `05-scale/eval-budget.md` |
+| M6 | **Ship-or-hold memo** | ✅ | `06-culture/ship-hold-memo.md` |
 
 ## The feature in one sentence
 
-_What LLM feature are you evaluating, who relies on it, and what is the cost of getting it wrong?_
+Ascend IQ is a customer-facing AI agent that answers plain-language market-intelligence questions for VP-level strategists at Fortune 500 clients paying $50,000+ a year. A confidently wrong answer, above all a false claim about a competitor, can damage a key relationship and expose us to legal risk.
 
 ---
 
