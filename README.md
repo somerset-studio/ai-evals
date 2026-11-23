@@ -12,14 +12,14 @@ Ascend IQ serves VP-level strategists at Fortune 500 companies who pay upward of
 
 ## How I evaluated it
 
-| Step | What I did | Key result | Artifacts |
-|---|---|---|---|
-| **1. Strategy** | Defined the user promise, three trust metrics (Latency, Hallucination Rate, UX Trust) and the trade-offs we accept | Accuracy over speed: we accept extra seconds for grounding checks | [Strategy canvas](01-evaluation-strategy/strategy-canvas.md) · [Judge test](01-evaluation-strategy/eval-harness-proof.md) |
-| **2. Failure audit** | Scored 20 real answers against their sources with an LLM judge, then reviewed its calls by hand | 7 of 20 failed; 4 were hallucinations (4/20, HIGH, P0) | [Audit log](02-failure-discovery/audit-log.md) · [Failure taxonomy](02-failure-discovery/failure-taxonomy.md) |
-| **3. Eval suite** | Built a rule check, a safety rule and an LLM judge for false competitor claims | The judge caught 2 of 2, with 2 false alarms; the rule check missed 1 of 2; the safety rule raised 5 false alarms | [Eval suite](03-eval-suites/eval-suite.md) · [Eval spec](03-eval-suites/eval-spec.md) |
-| **4. Release gates** | Gave each failure a Hard, Soft or Advisory gate and defined what counts as a pass | Hard gate: 100% of competitor-comparison answers must pass; one confirmed false claim blocks the release | [Gate map](04-eval-gates/gate-map.md) · [Launch strategy](04-eval-gates/launch-strategy.md) |
-| **5. Scale** | Mapped eval coverage across five AI products and budgeted evals by risk | $168,250 planned within a $200,000 quarterly cap, with a $31,750 reserve; no Ascend IQ trust metric has a check running on every release yet | [Coverage matrix](05-scale/coverage-matrix.md) · [Eval budget](05-scale/eval-budget.md) |
-| **6. Decision** | Wrote the ship-or-hold memo for the CPO | Hold until the safeguards are live and pass the Hard gate | [Ship-or-hold memo](06-culture/ship-hold-memo.md) · [Presentation](06-culture/final-presentation.html) |
+| Step | What I did | Key result |
+|---|---|---|
+| **1. Strategy** | Defined the user promise, three trust metrics (Latency, Hallucination Rate, UX Trust) and the trade-offs we accept | Accuracy over speed: we accept extra seconds for grounding checks |
+| **2. Failure audit** | Scored 20 real answers against their sources with an LLM judge, then reviewed its calls by hand | 7 of 20 failed; 4 were hallucinations (4/20, HIGH, P0) |
+| **3. Eval suite** | Built a rule check, a safety rule and an LLM judge for false competitor claims | The judge caught 2 of 2, with 2 false alarms; the rule check missed 1 of 2; the safety rule raised 5 false alarms |
+| **4. Release gates** | Gave each failure a Hard, Soft or Advisory gate and defined what counts as a pass | Hard gate: 100% of competitor-comparison answers must pass; one confirmed false claim blocks the release |
+| **5. Scale** | Mapped eval coverage across five AI products and budgeted evals by risk | $168,250 planned within a $200,000 quarterly cap, with a $31,750 reserve; no Ascend IQ trust metric has a check running on every release yet |
+| **6. Decision** | Wrote the ship-or-hold memo for the CPO | Hold until the safeguards are live and pass the Hard gate |
 
 ## Next steps
 
